@@ -9,9 +9,10 @@ set smartindent                                                             " Us
 set tabstop=4                                                               " Tab width is 4 spaces
 set shiftwidth=4                                                            " Indent also with 4 spaces
 set expandtab                                                               " Expand tabs to spaces
-set nowrap                                                                  " Do not wrap lines
+set wrap                                                                    " Do not wrap lines
 set noequalalways                                                           " Do not maintain window-size ratio (when having multiple window splits I don't find it desirable)
 set textwidth=120                                                           " Wrap lines at 120 chars. 80 is somewhat antiquated with nowadays displays.
+set colorcolumn=120                                                          " highlight column 120
 let mapleader = ","                                                         " Define ',' is leader key
 syntax on                                                                   " Turn syntax highlighting on
 set ignorecase
