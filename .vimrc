@@ -22,3 +22,5 @@ for file in g:yavide_configuration_files
     execute('source ' . g:YAVIDE_ROOT_DIRECTORY . '/' . file)
 endfor
 
+cs add $CSCOPE_DB
+
