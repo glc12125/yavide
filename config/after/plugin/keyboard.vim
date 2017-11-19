@@ -78,6 +78,9 @@ nmap        <C-\>d              :YavideSrcNavFindAllCallees<CR>|"               
 nmap        <C-\>i              :YavideSrcNavFindAllIncludes<CR>|"                              Find all files that include the filename under the cursor
 nmap        <C-\>t              :YavideSrcNavFindAllInstancesOfText<CR>|"                       Find all instances of the text under cursor
 nmap        <C-\>e              :YavideSrcNavEGrepSearch<CR>|"                                  Search for the word under the cursor using 'egrep'
+nmap 	    <F11> 		:!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.hpp' -o -iname '*.cc' > cscope.files<CR>
+  				\:!cscope -b -i cscope.files -f cscope.out<CR>
+  				\:cs kill -1<CR>:cs add cscope.out<CR>
 
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Build process
