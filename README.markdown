@@ -42,6 +42,15 @@ See [Installation guide](docs/INSTALL.md).
 # Usage
 See [Usage](docs/usage.md).
 
+# Extra note
+
+* Please install correct libclang for services to work:
+    * apt install python-clang-4.0 libclang-4.0-dev
+* and create symlink to /usr/lib/libclang.so:
+    * ln -s /usr/lib/x86_64-linux-gnu/libclang-M.m.so /usr/lib/libclang.so
+* install correct gvim with python 2.x support
+    * sudo apt-get install vim.gnome-py2
+
 # Screenshots
 ![Yavide](https://raw.githubusercontent.com/wiki/JBakamovic/yavide/images/yavide_in_action.png)
 
